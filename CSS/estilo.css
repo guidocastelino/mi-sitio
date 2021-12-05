@@ -62,8 +62,23 @@ header{
     filter: brightness(90%);
 }
 
+/*hover*/
 
+.griditem:hover{ 
+    filter:brightness(100%); 
+}
 
+@media all and (max-width: 1000px) {
+    .container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media all and (max-width: 700px) {
+    .container{
+        grid-template-columns: 1fr;
+    }
+}
 
 /*accesorios*/
 
@@ -84,7 +99,9 @@ header{
     transition:all 1s;
 }
 
-
+.griditem2:hover{
+    transform:scale(1.10);
+}
 
 /*footer*/
 
