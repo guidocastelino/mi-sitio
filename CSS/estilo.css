@@ -1,0 +1,103 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*HEADER*/
+
+.header_nav{
+    background-color: rgb(86, 80, 165);
+    height: 50px;
+    line-height: 17px;
+    float:right;
+    margin-bottom: 10px;
+    
+
+}
+
+.header_nav ul li{
+    display: inline;
+    font-size: 14px;
+    padding: 0 10px 0 10px;
+    color: azure;
+
+}
+
+.header_nav ul li a{
+    text-decoration: none;
+    color: azure;
+    
+}
+
+.bold{
+    font-weight: bold;
+}
+
+header{
+    text-align: center;
+}
+
+.clearfix{
+    clear: both;
+}
+
+/*MAIN*/
+/*index*/
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 1fr;
+    grid-gap: 15px;
+    
+}
+
+.griditem{
+    height: 300px;
+    width: 100%;
+    object-fit:cover;
+    margin-top: 10px;
+    border-radius: 4px;
+    filter: brightness(90%);
+}
+
+
+
+
+/*accesorios*/
+
+.container_acc{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 1fr;
+    grid-gap: 15px;
+}
+.griditem2{
+    height: 300px;
+    width: 100%;
+    object-fit:cover;
+    margin-top: 10px;
+    border-radius: 4px;
+    transition:all 1s;
+}
+
+
+
+/*footer*/
+
+footer{
+    background-color: antiquewhite;
+    height: 96px;
+    font-size: 14px;
+    padding: 10px;
+    margin-top: 50px;
+
+}
+
+.footer_sitio{
+    text-align: center;
+    line-height: 90px;
+}
