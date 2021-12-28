@@ -38,7 +38,7 @@ body{
 }
 
 /*accesorios*/
-.container_acc{
+/*.container_acc{
     width: 80%;
     margin: 0 auto;
     display: grid;
@@ -53,11 +53,11 @@ body{
     margin-top: 10px;
     border-radius: 4px;
     transition:all 1s;
-}
+    }
 
 .griditem2:hover{
     transform:scale(1.10);
-}
+}*/
 
 /*footer*/
 

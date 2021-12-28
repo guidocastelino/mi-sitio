@@ -1,0 +1,53 @@
+footer{
+    width: 100%;
+    background-color: $color-blanco;
+    height: 96px;
+    padding: 10px;
+    margin-top: 100px;
+    text-align: center;
+        p{
+            text-align: center;
+            margin-top: 25px;
+        }
+}
+
+$lista-colores: red, blue, green, yellow;
+
+@each $color in $lista-colores {
+    .color-#{color} {
+        background-color: $color;
+    }
+}
+
+$redes: (
+    twitter: #339be0,
+    facebook: #081694,
+    instagram: #ca1ba4,
+);
+
+@each $red, $color in $redes {
+    .red-#{$red}{
+        color: $color;
+    }
+}
+
+.boton {
+    border: solid 2px #339be0;
+    background-color: #339be0;
+    padding: 10px 20px;
+}
+
+.boton-primario{
+    @extend .boton;
+    color: #ca1ba4;
+}
+
+@mixin size ($alto, $ancho, $padding) {
+    height: $alto;
+    width: $ancho;
+    padding: $padding;
+}
+
+.box {
+    @include size(10px, 5px, 20px)
+}
