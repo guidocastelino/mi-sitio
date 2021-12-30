@@ -1,0 +1,80 @@
+
+$lista-colores: red, blue, green, yellow;
+
+@each $color in $lista-colores {
+    .color-#{color} {
+        background-color: $color;
+    }
+}
+
+$redes: (
+    twitter: #339be0,
+    facebook: #081694,
+    instagram: #ca1ba4,
+);
+
+@each $red, $color in $redes {
+    .red-#{$red}{
+        color: $color;
+    }
+}
+
+.boton {
+    border: solid 2px #339be0;
+    background-color: #339be0;
+    padding: 10px 20px;
+}
+
+.boton-primario{
+    @extend .boton;
+    color: #ca1ba4;
+}
+
+@mixin size ($alto, $ancho, $padding) {
+    height: $alto;
+    width: $ancho;
+    padding: $padding;
+}
+
+.box {
+    @include size(10px, 5px, 20px)
+}
+
+
+//accesorios
+.container_acc{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 1fr;
+    grid-gap: 15px;
+
+        .griditem2{
+            height: 300px;
+            width: 100%;
+            object-fit:cover;
+            margin-top: 10px;
+            border-radius: 4px;
+            transition: all 1s;
+                
+                &:hover{
+                    transform: scale (1.10);
+                }
+    }
+}
+
+//contacto
+.formulario{
+    background-color:rgb(200, 213, 245);
+    margin: 0 auto;
+    width: 40%;
+    padding: 20px;
+    border-radius: 10px;
+    color: 999;
+
+}
+
+.formulario h2{
+    font-size: 22px;
+}
