@@ -89,3 +89,14 @@ footer {
 @media all and (max-width: 700px) {
   .container {
     grid-template-columns: 1fr; } }
+
+/*info*/
+
+.info {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.info2{
+  padding-left: 5%;
+  padding-right: 6%;
+}
